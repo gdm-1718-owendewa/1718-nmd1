@@ -1,0 +1,24 @@
+body{
+    max-width:1920;
+    width:100%;
+    overflow-x:hidden;
+    font-family: helvetica , 'sans-serif';
+    font-size:14px;
+}
+#container{
+    max-width:1600px;
+    width:100%;
+    margin:0px auto;
+}
+#container header nav ul{
+}
+#container header nav ul li{
+    list-style-type: none;
+    display:inline;
+}
+#container header ul li a{
+    text-decoration:none;
+}
+#container header nav ul li+li{
+    margin-left:2%; 
+}
