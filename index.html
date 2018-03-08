@@ -14,19 +14,22 @@
     <div id="container">
             <header>
                     <nav>
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="#infobox">Persoonlijke info</a></li>
-                            <li><a href="#opleiding">Opleiding</a></li>              
-                            <li><a href="#knowledge">Kennis</a></li>
-                        </ul>
+                        <div id="imagebox">
+                         <img src="images/ik.jpg" alt="foto van mezelf" id="foto">  
+ 
+                         <ul>
+                             <li><a href="index.html" onmouseover="border()" onmouseout="normalImg()">Home</a></li>
+                             <li><a href="#pinfo" onmouseover="border()" onmouseout="normalImg()">Persoonlijke info</a></li>
+                             <li><a href="#opleiding" onmouseover="border()" onmouseout="normalImg()">Opleiding</a></li>              
+                             <li><a href="#knowledge" onmouseover="border()" onmouseout="normalImg()">Kennis</a></li>
+                         </ul>
+                        </div>
+
                     </nav>
                 </header>
         <h1>CURRICULUM VITAE</h1>
  
-        <div id="imagebox">
-             <img src="images/ik.jpg" alt="foto van mezelf" id="foto">   
-        </div>
+       
         <div id="infobox">                
             <div id="left">
                 <div id="contentboxleft">
@@ -56,15 +59,15 @@
                     <div id="opleiding" class="clearfix">
                             <div class="educationSegment">
                                 <img src="images/reading.png" class="roundedImage">
-                                <p></p>
+                                <p class="educationText">Secundair Viso multimedia</p>
                             </div>
                             <div class="educationSegment">
                                 <img src="images/professor.png" class="roundedImage">
-                                <p></p>
+                                <p class="educationText"> Se-N-Se Viso Multimediaoperator</p>
                             </div>
                             <div class="educationSegment">
                                 <img src="images/presentation.png" class="roundedImage">
-                                <p></p>
+                                <p class="educationText"> Artevelde HS NMD</p>
                             </div>
                            
                             </div>
