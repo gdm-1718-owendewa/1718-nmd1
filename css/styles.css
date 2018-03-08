@@ -110,6 +110,9 @@ body{
     display:inline;
    
 }
+.container{
+    padding-top:5%;
+}
 #floatLeft{
     float:left;
     margin-top:15%;
