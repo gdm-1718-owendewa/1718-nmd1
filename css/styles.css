@@ -1,3 +1,11 @@
+.clearfix {
+    overflow: auto;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
 body{
     max-width:1920;
     width:100%;
@@ -11,11 +19,14 @@ body{
     max-width:1920px;
     width:100%;
     margin:0px auto;
+    
 }
 #container header{
     background-color:#2f6fb9;
+    height:100vh;
 }
 #container header nav {
+    padding-top:7.5%;
     padding-bottom:5%;
     
 }
@@ -44,6 +55,10 @@ body{
     padding-left:1%; 
 
 }
+#pinfo{
+    height:100vh;
+
+}
 .roundedImage{
     border-radius:50%;
     width:200px;
@@ -51,15 +66,18 @@ body{
 #opleiding{
     max-width:1920px;
     background-color:#2f6fb9;
-    padding:8%;
+    padding-left:6%;
+    height:100vh;
+
 }
 #opleiding div{
+    padding-top:15%;
     display: inline-block;
 }
 #opleiding .educationSegment{
     width:25%;
-    margin-left:6.5%;
     text-align: center;
+    margin-left:4%;
 }
 #opleiding .educationSegment img{
     border:6px solid #265183;
@@ -80,4 +98,85 @@ body{
 .educationText{
     color:#fff;
     padding-top:5%;
+}
+#infobox2{
+    max-width:500px;
+    margin:0px auto;
+
+}
+#infobox2 img{
+    width:200px;
+    margin-top:1%;
+    display:inline;
+   
+}
+#floatLeft{
+    float:left;
+    margin-top:15%;
+}
+#floatRight{
+    float:left;
+    margin-top:15%;
+}
+#knowledge{
+    height:100vh;
+    max-width:1200px;
+    margin:0px auto;
+}
+#personalinfoboxleft{
+float:left;
+padding:5%;
+font-size:2em;
+margin-top:15%;
+margin-left:22.5%;
+line-height:1.1;
+}
+#personalinfoboxright{
+float:left;
+padding:5%;
+font-size:2em;
+margin-top:15%;
+color:gold;
+line-height:1.1;
+
+}
+.preNext{
+    max-width:1920px;
+    margin-top:3%;
+    text-align:center;
+}
+.preNext a{
+    text-decoration: none;
+    color:#265183;
+}
+.preNext a+a{
+    margin-left:80%;
+}
+.opNext{
+    max-width:1920px;
+    width:100%;
+    text-align:center;
+    margin-left:-3%;
+    margin-top:2%;
+}
+.opNext a{
+    text-decoration: none;
+    color:#fff;
+}
+.opNext a+a{
+    margin-left:85%;
+}
+.preNextKnowledge{
+    max-width:1920px;
+    text-align:center;
+    position: absolute;
+    width:100%;
+    margin-top:-8%;
+}
+.preNextKnowledge a{
+    text-decoration: none;
+    color:#265183;
+}
+.preNextKnowledge a+a{
+    margin-left:80%;
 }

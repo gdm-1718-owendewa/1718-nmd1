@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/overlay.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     
@@ -12,7 +13,7 @@
 </head>
 <body>
     <div id="container">
-            <header>
+            <header id="header">
                     <nav>
                         <div id="imagebox">
                          <img src="images/ik.jpg" alt="foto van mezelf" id="foto">  
@@ -27,35 +28,106 @@
 
                     </nav>
                 </header>
-        <h1>CURRICULUM VITAE</h1>
  
        
         <div id="infobox">                
             <div id="left">
                 <div id="contentboxleft">
                     <div id="pinfo" class="clearfix">
-                        <h2>Personal info</h2>
                         <div id="personalinfobox">
-                            <div id="infobox2">
-                                <div class="personalinfoboxleft">
-                                    <p>Naam:</p>
-                                    <p>Geboortedatum:</p>
-                                    <p>Nationaliteit:</p>
-                                    <p>Adres:</p>
-                                    <p>Email Adres:</p>
-                                    <p>Telefoonnummer:</p>                        
-                                </div>
-                                <div class="personalinfoboxright">
-                                        <p>Owen De Waele</p>
-                                        <p>19/09/1998</p>
-                                        <p>Belg</p>
-                                        <p>Belzeelsetraat 29b</p>
-                                        <p>owendewa@student.artevelhs.be</p>
-                                        <p>0471139103</p>                        
-                                </div>
-                            </div>
+                            <div id="infobox2" class="clearfix">
+                                <div id="floatLeft" class="clearfix">
+                                <!--  Nieuwe container -->
+                                    <div class="container" >
+                                      <div class="content">
+                                          <div class="content-overlay"></div>
+                                          <img class="content-image" src="images/PersonalInfo/nameicon.png">
+                                          <div class="content-details fadeIn-bottom">
+                                            <h3 class="content-title">Naam</h3>
+                                            <p class="content-text">Owen De Waele</p>
+                                          </div>
+                                        </a>
+                                      </div>
+                                    </div> 
+                                <!--  Einde container r-->     
+                                 <!--  Nieuwe container -->
+                                 <div class="container" >
+                                        <div class="content">
+                                            <div class="content-overlay"></div>
+                                            <img class="content-image" src="images/PersonalInfo/invitation.png">
+                                            <div class="content-details fadeIn-bottom">
+                                              <h3 class="content-title">verjaardag</h3>
+                                              <p class="content-text">19/09/1998</p>
+                                            </div>
+                                          </a>
+                                        </div>
+                                      </div> 
+                                  <!--  Einde container r-->    
+                                   <!--  Nieuwe container -->
+                                   <div class="container" >
+                                        <div class="content">
+                                            <div class="content-overlay"></div>
+                                            <img class="content-image" src="images/PersonalInfo/belgium.png">
+                                            <div class="content-details fadeIn-bottom">
+                                              <h3 class="content-title">Nationaliteit</h3>
+                                              <p class="content-text">Belg</p>
+                                            </div>
+                                          </a>
+                                        </div>
+                                      </div> 
+                                  <!--  Einde container r-->   
+                                </div>  
+                                <div id="floatRight" class="clearfix">
+                                        <!--  Nieuwe container -->
+                                            <div class="container" >
+                                              <div class="content">
+                                                  <div class="content-overlay"></div>
+                                                  <img class="content-image" src="images/PersonalInfo/house.png">
+                                                  <div class="content-details fadeIn-bottom">
+                                                    <h3 class="content-title">adres</h3>
+                                                    <p class="content-text">Belzeelsestraat 29b</p>
+                                                  </div>
+                                                </a>
+                                              </div>
+                                            </div> 
+                                        <!--  Einde container r-->     
+                                         <!--  Nieuwe container -->
+                                         <div class="container" >
+                                                <div class="content">
+                                                    <div class="content-overlay"></div>
+                                                    <img class="content-image" src="images/PersonalInfo/letter.png">
+                                                    <div class="content-details fadeIn-bottom">
+                                                      <h3 class="content-title">Email</h3>
+                                                      <p class="content-text">owendewa@student.<br>arteveldehs.be</p>
+                                                    </div>
+                                                  </a>
+                                                </div>
+                                              </div> 
+                                          <!--  Einde container r-->    
+                                           <!--  Nieuwe container -->
+                                           <div class="container" >
+                                                <div class="content">
+                                                    <div class="content-overlay"></div>
+                                                    <img class="content-image" src="images/PersonalInfo/phone-call.png">
+                                                    <div class="content-details fadeIn-bottom">
+                                                      <h3 class="content-title">Telefoon</h3>
+                                                      <p class="content-text">0471 031395</p>
+                                                    </div>
+                                                  </a>
+                                                </div>
+                                              </div> 
+                                          <!--  Einde container r-->   
+                                        </div> 
+                                    
+                             </div>
+                             <div class="preNext">
+                                    <a href="#header"> &lt; Previous</a>
+                                    <a href="#opleiding">Next 	&gt;</a>
+                             </div>
                         </div>
+                             
                     </div>
+                    
                     <div id="opleiding" class="clearfix">
                             <div class="educationSegment">
                                 <img src="images/reading.png" class="roundedImage">
@@ -69,8 +141,12 @@
                                 <img src="images/presentation.png" class="roundedImage">
                                 <p class="educationText"> Artevelde HS NMD</p>
                             </div>
-                           
-                            </div>
+                           <div class="opNext">
+                               <a href="#pinfo">&lt; Previous</a>
+                               <a href="#knowledge">Next 	&gt;</a>
+                           </div>
+                     </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -78,7 +154,6 @@
             <div id="right">
                 <div id="contentboxright">
                         <div id="knowledge">
-                            <h2>Kennis</h2>
                             <div id="personalinfobox">
                                 <div id="personalinfoboxleft">
                                     <p>Indesign</p>
@@ -149,7 +224,12 @@
                                     </p>                      
                                 </div>
                             </div>
+                         
                         </div>
+                        <div class="preNextKnowledge clearfix">
+                                <a href="#opleiding"> &lt; Previous</a>
+                                <a href="#header">Next 	&gt;</a>
+                         </div>
                 </div>
             </div>
         </div>
